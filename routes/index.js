@@ -11,10 +11,6 @@ router.get('/', function(req, res, next) {
 /* GET add contacts form html */
 router.get('/addContacts', function(req, res, next) {
 	console.log('inside GET /addContacts route in index.js server router file');
-	// Get from DB
-	// Add to list 
-	// Write to DB 
-	// Return to client 
   res.render('addContact', { title: 'Add Contact Form'});
 });
 
