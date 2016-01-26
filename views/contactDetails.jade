@@ -1,9 +1,12 @@
 extends layout
 
 block content
-  p Details of Contact
-  h4=name  
-  h4=number
+  h3 Contact Details
+  h4 Name: #{name}  
+  h4 Phone Number: #{phoneNumber}
+  h4 Email: #{email}
+  h4 Address: #{address}
+  h4 Birthdate: #{birthdate}
   a(href='/') Back
   script(src='javascripts/contactDetails.js')
 

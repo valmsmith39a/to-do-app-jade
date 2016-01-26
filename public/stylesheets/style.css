@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+#contacts-list {
+	font-size: 20px;
+}
+
+.name-col .number-col {
+	font-size:14px;
+}
+

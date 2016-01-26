@@ -31,9 +31,9 @@ function updateArrayOfRowContainers(){
 
 	arrayOfContactsObjectsG.map(function(contact){
 		var $rowContainer = $('<div>').addClass('row row-container');
-		var $nameColumn = $('<div>').addClass('name-col col-md-1 col-xs-3').text(contact.name); 
+		var $nameColumn = $('<div>').addClass('name-col col-md-2 col-xs-2').text(contact.name); 
     $rowContainer.append($nameColumn); 
-    var $numberColumn = $('<div>').addClass('number-col col-md-7 col-xs-3').text(contact.phoneNumber);
+    var $numberColumn = $('<div>').addClass('number-col col-md-2 col-xs-2').text(contact.phoneNumber);
 		$rowContainer.append($numberColumn);
 		
     arrayOfRowContainersObjectsG.push($rowContainer);

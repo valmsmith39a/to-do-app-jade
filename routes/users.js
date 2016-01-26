@@ -25,22 +25,26 @@ router.get('/getContacts', function(req, res, next) {
 
 // post task to server
 router.post('/addContact', function(req, res) {
- console.log('inside POST /users route in users.js server router file');
   fs.readFile('./contacts.json', function(err, data) {
     if(err) return res.status(400).send(err);
     if(data == ''){
     	data = '[]';
     }
     var arr = JSON.parse(data);
-    console.log('in post, before adding object', arr);
     var name = req.body.name;
     var phoneNumber = req.body.phoneNumber;
+    var email = req.body.email; 
+    var address = req.body.address; 
+    var birthdate = req.body.birthdate;
+    
     var newContactObject = {
     	name:name,
     	phoneNumber:phoneNumber,
+      email:email, 
+      address:address,
+      birthdate:birthdate
     }
     arr.push(newContactObject);
-    console.log('in post, after adding object', arr);
     fs.writeFile('./contacts.json', JSON.stringify(arr), function(err) {
       if(err) return res.status(400).send(err);
       res.send(arr);

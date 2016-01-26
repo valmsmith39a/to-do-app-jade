@@ -1,10 +1,17 @@
 extends layout
 
 block content
-  p Please enter name and phone number  
+  h3 Contact information
+  <br> 
   input#input-name(type='text', placeholder='Last name, first name')
   <br>
   input#input-phone-number(type='text', placeholder='123-4567')
+  <br>
+  input#input-email(type='text', placeholder='jimkirk@Enterprise.com')
+  <br>
+  input#input-address(type='text', placeholder='456 Klingons Drive')
+  <br>
+  input#input-birthdate(type='text', placeholder='Birthdate')
   <br>
   input#add-contact-btn(type='submit', value='Add')
   script(src='javascripts/addContact.js')
