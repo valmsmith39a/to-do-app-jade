@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  p Please enter name and phone number  
+  input#input-name(type='text', placeholder='Last name, first name')
+  <br>
+  input#input-phone-number(type='text', placeholder='123-4567')
+  <br>
+  input#add-contact-btn(type='submit', value='Add')
+  script(src='javascripts/addContact.js')
+  

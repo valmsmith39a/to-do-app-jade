@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  p Welcome to #{'your contacts'}  <!-- p Welcome to #{title} -->
+  a(href='/addContacts') Add Contacts
+  <br>
+  .contacts-list contacts list
+  script(src='javascripts/main.js')
+  
